@@ -16,6 +16,8 @@ const validationSchema = Yup.object({
 
     interface NoteFormProps {
         onClose: () => void;
+        onSuccess: () => void;
+  onCancel: () => void;
 }
 
 export default function NoteForm ({ onClose }: NoteFormProps) {
