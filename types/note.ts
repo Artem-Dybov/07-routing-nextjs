@@ -7,8 +7,10 @@ export interface Note {
   tag: string;
 }
 
-export type NewNote = {
+export interface NoteByTag{
+  id: string;
   title: string;
   content: string;
-  tag: 'Todo' | 'Work' | 'Personal' | 'Meeting' | 'Shopping';
-};
+  createdAt: string;
+  updatedAt: string;
+}
